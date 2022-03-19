@@ -1,3 +1,7 @@
 div{
 background-color: white;
 }
+.btns{
+    display:flex;
+    justify-content: space-between;
+}
