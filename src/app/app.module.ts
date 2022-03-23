@@ -12,7 +12,7 @@ import { ButtonQuoteComponent } from './components/button-quote/button-quote.com
     AppComponent,
     BackgroundComponent,
     FrameComponent,
-    ButtonQuoteComponent
+    ButtonQuoteComponent,
   ],
   imports: [
     BrowserModule,

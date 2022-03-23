@@ -1,7 +1,10 @@
 <div class="container">
     <h1>Random Quote Machine</h1>
+    <div class="frame-content">
+        <p class="frame-quote">{{quote.quote}}</p>
+        <span>-{{quote.author}}</span>
+    </div>
     <div class="btns">
         <app-button-quote (changeQuote)="changeQuote()"></app-button-quote>
-    </div>
-    
+    </div>   
 </div>

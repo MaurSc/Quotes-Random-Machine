@@ -14,8 +14,10 @@ export class ButtonQuoteComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   newQuote(){
     this.changeQuote.emit();
+    console.log("boton")
   }
 
 }

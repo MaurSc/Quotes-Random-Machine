@@ -9,18 +9,19 @@ import { QuotesService } from 'src/app/services/quotes.service';
   styleUrls: ['./frame.component.css']
 })
 export class FrameComponent implements OnInit {
-  quotes: Quotes[] = [];
+  quote:any;
   constructor(
     private quotesService : QuotesService
   ) { }
 
-  ngOnInit(): void {
-    this.quotesService.getQuotes().subscribe(quotes =>{
-      this.quotes = quotes;
-      console.log(quotes)
-    });
+  ngOnInit(){
+    this.changeQuote();
   }
+  
   changeQuote(){
-
+    this.quotesService.getQuotes().subscribe(
+      res =>{
+     this.quote = res.quotes[Math.round(Math.random()* 100)];
+     });
   }
 }
