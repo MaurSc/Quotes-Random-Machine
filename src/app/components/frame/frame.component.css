@@ -2,6 +2,9 @@ div{
 background-color: white;
 text-align:center;
 }
+fa-icon{
+    font-size:30px;
+}
 .btns{
     display:flex;
     justify-content: space-between;

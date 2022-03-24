@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BackgroundComponent } from './components/background/background.component';
 import { FrameComponent } from './components/frame/frame.component';
 import { ButtonQuoteComponent } from './components/button-quote/button-quote.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ButtonQuoteComponent } from './components/button-quote/button-quote.com
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

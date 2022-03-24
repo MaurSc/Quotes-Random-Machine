@@ -1,6 +1,5 @@
-import { Component, OnInit, EventEmitter } from '@angular/core';
+import { Component, OnInit, EventEmitter,Output,Input } from '@angular/core';
 
-import { Output } from '@angular/core';
 
 @Component({
   selector: 'app-button-quote',
@@ -9,7 +8,7 @@ import { Output } from '@angular/core';
 })
 export class ButtonQuoteComponent implements OnInit {
 @Output() changeQuote = new EventEmitter();
-
+@Input() color:string = "";
   constructor() { }
 
   ngOnInit(): void {
