@@ -1,14 +1,14 @@
-export enum Colors { //10
-    '#16a085'=1,
-  '#27ae60',
-  '#2c3e50',
-  '#f39c12',
-  '#e74c3c',
-  '#9b59b6',
-  '#FB6964',
-  '#342224',
-  '#472E32',
-  '#BDBB99',
-  '#77B1A9',
-  '#73A857'
+export enum Colors { //12
+  IndianRed,
+  FireBrick,
+  LightPink,
+  DarkOrange,
+  DarkKhaki,
+  Violet,
+  MediumPurple,
+  ForestGreen,
+  YellowGreen,
+  DarkSlateGray,
+  LightSlateGray,
+  RosyBrown
 }

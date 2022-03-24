@@ -8,7 +8,7 @@ import {Colors} from '../../models/colors';
   styleUrls: ['./background.component.css']
 })
 export class BackgroundComponent implements OnInit {
-  color:string = Colors[6];
+  color:string = "";
 
   //injecto document para poder hacer uso de los metodo y cambiar dinamicamente el color del body
   constructor(@Inject(DOCUMENT) private document: Document) { }
@@ -18,7 +18,8 @@ export class BackgroundComponent implements OnInit {
   }
 
   changeColor(){
-    this.document.body.style.backgroundColor = this.color[Math.round(Math.random()* 100)];
+    this.color=Colors[Math.round(Math.random()* 11)];
+    this.document.body.style.backgroundColor = this.color;
   }
 
 }

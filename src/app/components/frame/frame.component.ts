@@ -1,18 +1,18 @@
-import { Component, OnInit, Output, Input } from '@angular/core';
+import { Component, OnInit, Output, Input,EventEmitter } from '@angular/core';
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 //import service quotes_service
 import { QuotesService } from 'src/app/services/quotes.service';
-// enum of colors
-import {Colors} from '../../models/colors';
 @Component({
   selector: 'app-frame',
   templateUrl: './frame.component.html',
   styleUrls: ['./frame.component.css']
 })
 export class FrameComponent implements OnInit {
+  @Input() color:string ="";
+  @Output() changeColor = new EventEmitter();
   faQuoteLeft = faQuoteLeft;
   quote:any;
-  @Input() color:string ="";
+  
   constructor(
     private quotesService : QuotesService
   ) { }
@@ -26,5 +26,6 @@ export class FrameComponent implements OnInit {
       res =>{
      this.quote = res.quotes[Math.round(Math.random()* 100)];
      });
+     this.changeColor.emit();
   }
 }
