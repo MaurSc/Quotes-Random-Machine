@@ -1,6 +1,12 @@
-<app-frame 
-    [color]='color'
-    (changeColor)="changeColor()"
-> 
-</app-frame>
+<div
+    [ngStyle]="{'position':'absolute', 'width': '100%', 'height': '100%'}"
+    [@efecColor]="changeC"
+>
+    <app-frame 
+        [color]='color'
+        (changeColor)="changeColor()"
+    > 
+    </app-frame>
+</div>
+
 
