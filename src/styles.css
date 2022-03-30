@@ -15,7 +15,8 @@ body{
 
 .container{
     max-width: 500px;
-    margin: 30px auto;
+    margin:30px auto;
+    margin-top:150px;
     overflow: auto;
     min-height: 300px;
     border: 1px solid steelblue;
@@ -76,4 +77,19 @@ body{
 .form-control-check input {
     flex: 2;
     height: 20px;
+}
+/**Media Queries**/
+
+@media (min-width: 1920px){
+    .container{
+        margin-left: 700px;
+        margin-top:150px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        margin: auto auto;
+        margin-top:150px;
+        margin-bottom:30px;
+    }
 }
