@@ -1,10 +1,16 @@
+import { state, style, trigger } from '@angular/animations';
 import { Component, OnInit, EventEmitter,Output,Input } from '@angular/core';
 
 
 @Component({
   selector: 'app-button-quote',
   templateUrl: './button-quote.component.html',
-  styleUrls: ['./button-quote.component.css']
+  styleUrls: ['./button-quote.component.css'],
+  animations: [
+    trigger('toggleHide', [
+        state('hidden',style({}))
+    ]),
+  ],
 })
 export class ButtonQuoteComponent implements OnInit {
 @Output() changeQuote = new EventEmitter();
@@ -15,8 +21,10 @@ export class ButtonQuoteComponent implements OnInit {
   }
 
   newQuote(){
-    this.changeQuote.emit();
-    console.log("boton")
+    setTimeout(() =>{
+      this.changeQuote.emit();
+    },1000);
+    
   }
 
 }

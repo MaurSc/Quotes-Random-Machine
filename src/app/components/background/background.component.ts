@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { style, animate, trigger, state, transition } from '@angular/animations';
 
-import { COLORGLOBAL } from '../gobals/COLORGLOBAL';
+import { COLORGLOBAL } from '../gobals/colorGlobal';
 
 @Component({
   selector: 'app-background',
@@ -23,7 +23,7 @@ import { COLORGLOBAL } from '../gobals/COLORGLOBAL';
       state('LightSlateGray', style({  opacity: 0.8,  backgroundColor: 'LightSlateGray'})),
       state('RosyBrown', style({  opacity: 0.8,  backgroundColor: 'RosyBrown'})),
       transition ('* => *', [
-        animate ('0.8s',
+        animate ('1s',
         ),
       ]),
     ]),

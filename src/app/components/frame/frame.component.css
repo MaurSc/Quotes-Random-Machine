@@ -7,7 +7,8 @@ fa-icon{
 }
 .btns{
     display:flex;
-    justify-content: space-between;
+    margin-top: 40px;
+    justify-content: flex-end;
 }
 .frame-content{
     margin:  10px 10px;

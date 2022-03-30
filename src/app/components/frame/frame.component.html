@@ -1,7 +1,12 @@
 <div class="container">
-    <div class="frame-content">
+    <div 
+        [@textAni]=divText
+        class="frame-content"
+        [ngStyle]="{'color':color}"
+    >
+        
         <p 
-            [ngStyle]="{'color':color}"
+            
             class="frame-quote"
         >
         <fa-icon 
@@ -10,10 +15,8 @@
         </fa-icon>
          {{quote.quote}}
         </p>
-        <span 
-            [ngStyle]="{'color':color}"
-        >
-            -{{quote.author}}
+        <span>
+            - {{quote.author}}
         </span>
     </div>
     <div class="btns">
