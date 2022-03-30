@@ -13,10 +13,12 @@ fa-icon{
 .frame-content{
     margin:  10px 10px;
     text-align: right;
+    user-select:none;
 }
 .frame-quote{
     text-align: center;
     margin: 30px 0 20px 0;
     font-size:25px;
     font-weight:500;
+    user-select:none;
 }

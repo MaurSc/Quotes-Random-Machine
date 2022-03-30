@@ -8,6 +8,7 @@ import { BackgroundComponent } from './components/background/background.componen
 import { FrameComponent } from './components/frame/frame.component';
 import { ButtonQuoteComponent } from './components/button-quote/button-quote.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BackgroundComponent,
     FrameComponent,
     ButtonQuoteComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

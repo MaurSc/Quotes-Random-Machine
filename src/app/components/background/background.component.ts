@@ -23,8 +23,7 @@ import { COLORGLOBAL } from '../gobals/colorGlobal';
       state('LightSlateGray', style({  opacity: 0.8,  backgroundColor: 'LightSlateGray'})),
       state('RosyBrown', style({  opacity: 0.8,  backgroundColor: 'RosyBrown'})),
       transition ('* => *', [
-        animate ('1s',
-        ),
+        animate ('.9s')
       ]),
     ]),
   ],
